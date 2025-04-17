@@ -106,7 +106,9 @@ html,
         border: 2px solid var(--verde);
         border-radius: 10px;
         box-shadow: 0 4px 35px var(--verde);
-        margin: 0 auto 20px;
+        width: 80%;
+        margin: 0 auto 20px auto;
+
     }
 
     legend{
