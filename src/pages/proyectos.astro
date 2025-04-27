@@ -1,0 +1,28 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+
+import proyectos from '../data/proyectos.json';
+
+
+---
+
+<Layout>
+	
+	<main class="contenido-pagina">
+		<h1 class="titulo-pagina">Mis proyectos</h1>
+        <div class="enlaces-proectos">
+		<ul>
+            {proyectos.map((proyecto) => (
+            <li>
+                <a href={`/blog/${proyecto.slug}`} class="lista-posts">
+                {proyecto.title} - {proyecto.description}
+                </a>
+            </li>
+            ))}
+        </ul>
+    </div>
+	</main>
+	
+</Layout>

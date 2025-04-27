@@ -12,3 +12,4 @@
 12. Añado el archivo content.config.ts importando defineCollection y zod para validar las propiedades de los objetos con z.string().
 13. En el archivo [slug].astro itero con map sobre los posts creados para mostrarlos.
 14. Agrego el Css para hacerlo coherente con el resto, cambiando algunas clases anteriores.
+15. Realizo la misma operación que con el blog para listar los proyectos.
