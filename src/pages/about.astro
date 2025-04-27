@@ -1,22 +1,21 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
+
 
 ---
 
 <Layout>
-	<Header/>
-	<main>
+	
+	<main class="contenido-pagina">
 		<h1 class="titulo-pagina">Sobre mi</h1>
 		<div class="contenido-about">
 			<p>Me llamo Jesús J. Girona Estevan. Nací en Alicante en 1982. Estoy acabando segundo curso de DAW. Este es el ejercicio práctico de la semana 5. Fran nos ha mandado crear una sencilla página con Astro. </p>
 			<div class="contenedor-imagen">
-				<img src="/src/assets/sobre_mi.jpg" alt="jesus">
+				<img src="/sobre_mi.jpg" alt="jesus">
 			</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus veritatis ullam nobis magnam, consequuntur a! Impedit, maiores assumenda odio minima saepe eligendi sit nesciunt repudiandae, possimus officiis dignissimos quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum dicta dolorum reprehenderit vitae! Labore quis repudiandae reprehenderit aut hic cum tenetur officiis, aliquid iste autem consequatur dolores, quos eligendi.</p>
 		</div>
 	</main>
-	<Footer/>
+	
 </Layout>

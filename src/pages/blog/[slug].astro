@@ -1,0 +1,30 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+
+const { slug } = Astro.params;
+import { getCollection, getEntry } from 'astro:content';
+
+
+const post =  await getEntry('posts', slug);
+
+export async function getStaticPaths() {
+    const posts = await getCollection('posts');
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: { post },
+    }));
+}
+
+---
+
+<Layout>
+    {post && (
+        <div class="contenido-pagina">
+    <h1 class="titulo-pagina">{post.data.title}</h1>
+    <p>{post.data.date}</p>
+    <p>{post.body}</p>
+</div>
+    )}
+
+</Layout>
