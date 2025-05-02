@@ -1,0 +1,14 @@
+
+---
+const { postsApi } = Astro.props;
+---
+
+<div class="grid">
+    {postsApi.map((postApi) => (
+        <div class="card">
+            
+            <h2>{postApi.title}</h2>
+            <p>{postApi.body}</p>
+        </div>
+    ))}
+</div>

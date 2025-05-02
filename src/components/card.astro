@@ -1,0 +1,12 @@
+---
+import Contador from './contador.jsx';
+const { title, description, url } = Astro.props;
+
+---
+
+<article class="card">
+    <h2 class="card-title">{title}</h2>
+    <p class="card-description">{description}</p>
+    <a href={url} class="card-link">Ver entrada completa</a>
+    <Contador client:load/>
+</article>

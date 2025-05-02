@@ -190,3 +190,46 @@ html,
     font-size: 20px;
     margin: 0 25px;
   }
+
+
+  .card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 35px var(--verde);
+    margin: 20px 0;
+    padding: 20px;
+    color: var(--morado);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    &:hover{
+        transition: transform 0.5s;
+        transform: scale(1.05);
+    }
+    a{
+        color: var(--morado);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover{
+        color:var(--verde);
+    }
+  }
+  .boton-like{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    color: var(--morado);
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+        color: var(--verde);
+        transition: transform 0.5s;
+        transform: scale(1.1);
+    }
+
+  }
+  .texto-likes{
+    color: var(--verde);
+    font-weight: bold;
+  }

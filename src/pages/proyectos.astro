@@ -12,11 +12,11 @@ import proyectos from '../data/proyectos.json';
 	
 	<main class="contenido-pagina">
 		<h1 class="titulo-pagina">Mis proyectos</h1>
-        <div class="enlaces-proectos">
+        <div class="enlaces-proyectos">
 		<ul>
             {proyectos.map((proyecto) => (
-            <li>
-                <a href={`/blog/${proyecto.slug}`} class="lista-posts">
+            <li class="card">
+                <a href={`/proyectos/${proyecto.slug}`} class="lista-posts">
                 {proyecto.title} - {proyecto.description}
                 </a>
             </li>
